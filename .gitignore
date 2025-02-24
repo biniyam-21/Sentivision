@@ -2,16 +2,40 @@
 __pycache__/
 *.py[cod]
 *.class
+*.so
 
 # Virtual environments
 venv/
 .venv/
 env/
+ENV/
+env.bak/
+venv.bak/
+
+# Datasets & Training Images (FER-2013: 35,000+ images)
+data/
+src/data/
+**/data/
+
+# Past experiment runs & epoch dumps
+**/100 epoch/
+**/mode 50 epoch/
+
+# Model checkpoints & temporary weights
+*checkpoint*.h5
+*_temp.h5
+trained_model.h5
+
+# Logs & temp outputs
+*.log
 
 # IDE & Editor settings
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # OS generated files
 .DS_Store
 Thumbs.db
+desktop.ini
